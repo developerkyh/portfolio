@@ -1,0 +1,186 @@
+.list-el-wrap {
+  display: inline-block;
+
+  .list-el {
+    max-width: 26rem;
+    min-width: 20rem;
+    vertical-align: top;
+    border-radius: 6px 6px 6px 6px;
+    min-height: inherit;
+    position: relative;
+    padding: 0.6rem;
+    margin: 0 10px 10px 0;
+    background-color: #ffffff;
+    font-size: 12px;
+    box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2);
+    > dl {
+      margin-bottom: 0;
+    }
+    > dl > dt {
+      text-align: center;
+    }
+    > dl > dt > a {
+      display: block;
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
+    }
+    > dl > dt > a > img {
+      width: 100%;
+      height: auto;
+    }
+    > dl > dd {
+      text-align: left;
+      padding: 3px;
+    }
+    > dl > dd > label {
+      text-transform: uppercase
+    }
+    > dl > div {
+      padding: 10px 3px;
+    }
+    > dl > div > a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 2px;
+      text-align: center;
+      background-color: #3A405B;
+      color: #ffffff;
+      border-radius: 50px;
+    }
+    > dl > div.non-other-page {
+      height: 40px;
+    }
+    > dl > div > a:hover, > dl > div > a:active {
+      background-color: #00b3ee;
+      text-decoration: none;
+    }
+    > dl > div > a:visited {
+      background-color: #8288cb;
+    }
+    .list-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 5px 0;
+    }
+    .list-title > a {
+      text-decoration: none;
+    }
+  }
+
+  .list-el:hover {
+    background-color: #ececec;
+  }
+
+  .list-el {
+    @media (max-width: 589px) {
+      margin: 0 auto 10px auto;
+    }
+    @media (max-width: 589px) {
+      width: 100%;
+    }
+    > div {
+      text-align: right;
+    }
+    > div > a {
+      border-radius: 3px;
+      position: relative;
+      padding: 5px;
+      text-align: center;
+      color: #666;
+      min-width: 80px;
+      touch-action: manipulation;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    > div > a:hover {
+      color: #333;
+    }
+  }
+}
+
+.btn-app-modify {
+  border-radius: 3px;
+  position: relative;
+  padding: 15px 5px;
+  min-width: 100px;
+  height: 60px;
+  text-align: center;
+  color: #878787;
+  border: 1px solid #bfbfbf;
+  background-color: #dfdfdf;
+  font-size: 12px;
+  -moz-transition: All .4s ease;
+  -o-transition: All .4s ease;
+  -webkit-transition: All .4s ease;
+  transition: All .4s ease;
+
+  //Icons within the btn
+  > .fa, > .glyphicon, > .ion {
+    font-size: 20px;
+    display: block;
+  }
+
+  &:hover {
+    background: #cbcbcb;
+    color: #8a8a8a;
+    border-color: #aaa;
+  }
+
+  &:active, &:focus {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  }
+  //The badge
+  > .badge {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+.admin-btn-group {
+  padding-top: 10px;
+}
+
+.admin-btn-group.active {
+  > p {
+    > a {
+      > span {
+        display: none;
+      }
+    }
+  }
+  .btn-app-modify {
+    border-radius: 0;
+    display: block;
+    min-width: 50px;
+    height: inherit;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 1px solid #d2d6de;
+    background-color: #FFFFFF;
+
+    &:hover {
+      background-color: #dedede;
+      color: #444;
+      border-color: #aaa;
+    }
+    &:last-child {
+      border-bottom: 1px solid #d2d6de;
+    }
+    &:active, &:focus {
+      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+      -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+    &:before {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}
