@@ -20,7 +20,7 @@
     "@google-cloud/debug-agent": "^3.2.0",
     "@google-cloud/trace-agent": "^3.6.1",
     "autoprefixer": "^7.1.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^3.3.7",
     "bootstrap-colorpicker": "^2.5.1",
     "bootstrap-datepicker": "^1.7.0",
